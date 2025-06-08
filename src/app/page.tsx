@@ -2,7 +2,7 @@
 import { Header } from "./components/Header";
 import bg from "../../public/bg.jpg"
 import samra from "../../public/samra2.jpeg"
-import { Footer } from "./components/footer";
+// import { Footer } from "./components/footer";
 import Image from "next/image";
 export default function Home() {
 
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
 
   );
