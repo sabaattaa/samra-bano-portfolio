@@ -39,7 +39,6 @@ export default function RootLayout({
                     }}
                 >
                     <Header />
-
                     <div className="flex min-h-[90vh] flex-col md:flex-row items-center justify-center">
                         {/* Left Image Section */}
                         <div className=" flex-col gap-5 mt-8 md:mt-0 px-5 md:px-3 w-full md:w-1/2 md:h-full flex items-center justify-center ">
@@ -54,7 +53,6 @@ export default function RootLayout({
                                 download
                                 target="_blank"
                                 rel="noopener noreferrer"
-
                                 className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 shadow-lg shadow-pink-200 transition-all duration-300 hover:from-yellow-500 hover:via-pink-500 hover:to-purple-500 hover:scale-105 focus:outline-none overflow-hidden">
                                 <span className="absolute inset-0 rounded-full opacity-20 group-hover:opacity-30 bg-white blur-sm transition-all duration-300"></span>
                                 <Download className="w-5 h-5 z-10" />
