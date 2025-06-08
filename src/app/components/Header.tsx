@@ -2,7 +2,7 @@ import { header } from "../utils/helper";
 
 export const Header = () => {
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-md px-8 py-4 flex justify-center items-center gap-6">
+    <header className="sticky flex-wrap top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-md px-8 py-4 flex justify-center items-center gap-6">
       {header?.map((item, index) => (
         <span
           key={index}
