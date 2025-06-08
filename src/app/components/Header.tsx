@@ -1,6 +1,6 @@
 "use client"
 import {  useState } from "react";
-import { header } from "../utils/helper";
+import { header } from "../utils/helper"; 
 
 export const Header = () => {
   const [show, setShow] = useState(false)
@@ -18,44 +18,53 @@ export const Header = () => {
     flex-col md:flex-row  rounded-md md:rounded-0
     ">
 
-        <input className="opacity-0a absolute h-2 w-2 top-[-100px] left-[-100px] " autoFocus onBlur={() => setShow(!show)} />
+      
 
 
         {header?.map((item, index) => (
-          <span
+          <a href={item?.link}
             key={index}
             onClick={() => setShow(!show)}
             className="
           w-full md:w-fit 
           text-base font-medium text-gray-700 transition-all duration-300 hover:text-purple-600 hover:underline underline-offset-4 cursor-pointer relative group"
           >
-            {item}
+            {item?.title}
 
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
-          </span>
+          </a>
         ))}
 
 
+  <input
+  className="opacity-0 absolute h-2 w-2 top-[-100px] left-[-100px]"
+  autoFocus
+  onBlur={() => {
+    setTimeout(() => {
+      setShow(!show);
+    }, 200);
+  }}
+/>
 
 
       </header>}
 
 
       {<header className="absolute md:sticky  flex-wrap top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-md px-8 py-4 flex justify-center items-center gap-6 top-[47px] md:top-0 left-[30px]
-    flex-col md:flex-row    md:rounded-0 hidden md:flex
+    flex-col md:flex-row    md:rounded-0 hidden md:flex  
     ">
 
         {header?.map((item, index) => (
-          <span
+          <a href={item?.link}
             key={index} 
             className="
           w-full md:w-fit 
           text-base font-medium text-gray-700 transition-all duration-300 hover:text-purple-600 hover:underline underline-offset-4 cursor-pointer relative group"
           >
-            {item}
+            {item?.title}
 
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
-          </span>
+          </a>
         ))}
       </header>}
     </>
