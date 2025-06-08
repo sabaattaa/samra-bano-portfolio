@@ -18,11 +18,11 @@ export default function Home() {
 
       <div className="flex min-h-[90vh] flex-col md:flex-row items-center justify-center">
         {/* Left Image Section */}
-        <div className="px-5 md:px-3 w-full md:w-1/2 h-full flex items-center justify-center">
+        <div className="px-5 md:px-3 w-full md:w-1/2 md:h-full flex items-center justify-center ">
           <Image
             src={samra}
             alt="Samra Bano"
-            className="h-[80vh] rounded-[20px] object-contain"
+            className="h-[60vh] md:h-[80vh] rounded-[20px] object-contain  "
           />
         </div>
 
