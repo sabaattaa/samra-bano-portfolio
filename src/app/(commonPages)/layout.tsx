@@ -41,7 +41,7 @@ export default function RootLayout({
 
           <div className="flex min-h-[90vh] flex-col md:flex-row items-center justify-center">
             {/* Left Image Section */}
-            <div className="px-5 md:px-3 w-full md:w-1/2 md:h-full flex items-center justify-center ">
+            <div className="mt-8 md:mt-0 px-5 md:px-3 w-full md:w-1/2 md:h-full flex items-center justify-center ">
               <Image
                 src={samra}
                 alt="Samra Bano"
